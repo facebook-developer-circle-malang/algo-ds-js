@@ -1,0 +1,36 @@
+{
+  "name": "algo-ds-js",
+  "version": "1.0.0",
+  "description": "Algorithms and Data Structures in Javascript (Inspired by https://github.com/sherxon/AlgoDS)",
+  "main": "index.js",
+  "dependencies": {
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-flow": "^6.23.0",
+    "chai": "^3.5.0",
+    "flow-bin": "^0.43.1",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "build": "babel src/ --out-dir lib/ && eslint --fix lib/**",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facebook-developer-circle-malang/algo-ds-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facebook-developer-circle-malang/algo-ds-js/issues"
+  },
+  "homepage": "https://github.com/facebook-developer-circle-malang/algo-ds-js#readme"
+}
