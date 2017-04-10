@@ -1,6 +1,5 @@
-/* eslint-env mocha */
+/* eslint-env jest */
 
-import { assert } from 'chai';
 import rotateArray from '../src/RotateArray';
 
 describe('Rotate Array', () => {
@@ -9,13 +8,13 @@ describe('Rotate Array', () => {
   it('should not rotate array if there is not N', () => {
     const rotatedArray = rotateArray(arr);
 
-    assert.deepEqual(rotatedArray, arr);
+    expect(rotatedArray).toEqual(arr);
   });
 
   it('should rotate array with N=2', () => {
     const expectedArray = [5, 6, 1, 2, 3, 4];
     const rotatedArray = rotateArray(arr, 2);
 
-    assert.deepEqual(rotatedArray, expectedArray);
+    expect(rotatedArray).toEqual(expectedArray);
   });
 });
