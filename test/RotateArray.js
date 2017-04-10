@@ -1,8 +1,7 @@
 /* eslint-env mocha */
 
-const { assert } = require('chai');
-
-const rotateArray = require('../src/RotateArray');
+import { assert } from 'chai';
+import rotateArray from '../src/RotateArray';
 
 describe('Rotate Array', () => {
   const arr = [1, 2, 3, 4, 5, 6];
