@@ -3,6 +3,10 @@
         "airbnb",
         "plugin:flowtype/recommended"
     ],
+    "env": {
+        "es6": true,
+        "browser": true
+    },
     "plugins": [
         "flowtype"
     ],
