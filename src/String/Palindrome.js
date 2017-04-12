@@ -10,10 +10,10 @@
  * @returns boolean
  */
 const isPalindrome = (str: string): boolean => {
-  const lowerCased = str.toLowerCase();
+  const lowerCased = str.replace(/[\W_]/g, '').toLowerCase();
 
   // eslint-disable-next-line
-  return lowerCased.replace(/\s/g, '') === lowerCased.split('').reverse().join('').replace(/\s/g, '');
+  return lowerCased === lowerCased.split('').reverse().join('');
 };
 
 export default isPalindrome;
