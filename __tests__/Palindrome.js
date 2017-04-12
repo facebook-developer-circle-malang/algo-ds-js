@@ -20,4 +20,10 @@ describe('Palindrome checking', () => {
 
     expect(isPalindrome(str)).toBeFalsy();
   });
+
+  it('should return true if it\'s a palindrome with special symbols', () => {
+    const str = '2_A3*3#A2';
+
+    expect(isPalindrome(str)).toBeTruthy();
+  });
 });
