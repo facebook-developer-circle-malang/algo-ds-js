@@ -57,6 +57,7 @@ export default class SingleLinkedList {
       this.head = newNode;
       this.tail = newNode;
     } else {
+      // $FlowFixMe
       this.tail.next = newNode;
       this.tail = newNode;
     }
@@ -76,10 +77,12 @@ export default class SingleLinkedList {
     }
 
     let temp = this.head;
-    for (let i = 0; i < index; i++) {
+    for (let i = 0; i < index; i += 1) {
+      // $FlowFixMe
       temp = temp.next;
     }
 
+    // $FlowFixMe
     return temp.data;
   }
 
@@ -92,19 +95,27 @@ export default class SingleLinkedList {
   remove(dataToBeRemoved: any): boolean {
     let temp = this.head;
     while (temp !== null) {
+      // $FlowFixMe
       if (temp.data === dataToBeRemoved && temp === this.head) {
+        // $FlowFixMe
         this.head = this.head.next;
         this.size -= 1;
         return true;
       }
+
+      // $FlowFixMe
       if (temp.next !== null) {
+        // $FlowFixMe
         if (temp.next.data === dataToBeRemoved) {
           if (temp.next === this.tail) {
             this.tail = temp;
+            // $FlowFixMe
             this.tail.next = null;
             this.size -= 1;
             return true;
           }
+
+          // $FlowFixMe
           temp.next = temp.next.next;
           this.size -= 1;
           return true;

@@ -1,6 +1,5 @@
 [ignore]
 .*/node_modules
-.*/src/linkedlist/single/SingleLinkedList.js
 
 [include]
 
