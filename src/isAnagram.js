@@ -12,14 +12,14 @@ const isAnagram = (firstString: string, secondString: string): boolean => {
   const firstStringSorted = firstString
     .toLowerCase()
     .split('')
-    .filter(c => c !== ' ')
+    .filter((c: string): boolean => c !== ' ')
     .sort()
     .join('');
 
   const secondStringSorted = secondString
     .toLowerCase()
     .split('')
-    .filter(c => c !== ' ')
+    .filter((c: string): boolean => c !== ' ')
     .sort()
     .join('');
 

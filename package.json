@@ -22,7 +22,7 @@
     "jest": "^19.0.2"
   },
   "scripts": {
-    "test": "flow && ./node_modules/.bin/jest"
+    "test": "flow && eslint src/** && ./node_modules/.bin/jest"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
