@@ -19,12 +19,12 @@ class Node {
 
 /**
  * This class is used to represent entire BST with their attributes.
- * 
+ *
  * BST Explanation:
  * Binary Search Tree is a data structure which every node can have maximum 2 child nodes.
- * 
+ *
  * Example:
- * 
+ *
  *                          60
  *                         /  \
  *                       50    75
